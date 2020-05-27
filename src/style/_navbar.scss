@@ -1,0 +1,29 @@
+.nav{
+    margin: auto;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background: transparent;
+
+
+}
+
+.nav-element{
+text-decoration: none;
+font-size: 1.5em;
+padding: 0.5em;
+transition: 0.6s ease;
+border-radius: 25px;
+background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(229,240,229,1) 0%, rgba(0,212,255,1) 100%);   
+
+color: black;
+}
+
+.nav-element:hover{
+    background-color: rgb(198, 212, 236);
+    color: black;
+    opacity: .7;
+}

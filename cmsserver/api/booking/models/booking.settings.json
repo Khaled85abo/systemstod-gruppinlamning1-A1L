@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bookings",
+  "info": {
+    "name": "Booking"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Language": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "string"
+    },
+    "Date": {
+      "type": "string"
+    },
+    "FromTo": {
+      "type": "string"
+    },
+    "Price": {
+      "type": "decimal"
+    },
+    "Hours": {
+      "type": "decimal"
+    },
+    "Code": {
+      "type": "string"
+    }
+  }
+}
