@@ -31,6 +31,7 @@ render() {
                 {this.state.Lessons.map((Lesson) =>
                      
                       <SingleLessonCard 
+                      
                       key={Lesson.id}
                       docId={Lesson.id}
                       name={Lesson.Name}
