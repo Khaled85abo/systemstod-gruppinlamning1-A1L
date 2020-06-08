@@ -18,15 +18,7 @@ const firebaseConfig = {
 
 
 
-  apiKey: "AIzaSyDiT79vpei4fNcO6rPSxVyyh5JKZxZeKgE",
-    authDomain: "socialapp-66c9c.firebaseapp.com",
-    databaseURL: "https://socialapp-66c9c.firebaseio.com",
-
-    projectId: "socialapp-66c9c",
-    storageBucket: "socialapp-66c9c.appspot.com",
-    messagingSenderId: "1060087522654",
-    appId: "1:1060087522654:web:a9a703113baef491d4dbcf",
-    measurementId: "G-39GXEW90Q5"
+  
   };
 
 //initialize 
