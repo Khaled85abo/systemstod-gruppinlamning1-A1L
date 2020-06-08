@@ -33,10 +33,13 @@ uiConfig = {
 };
 
 componentDidMount(){
-    firebase.auth().onAuthStateChanged((user)=>{
-       this.setState({user:user.email}) //user:user
+     firebase.auth().onAuthStateChanged((user)=>{
+     if(user){
+           this.setState({user:user.email}) //user:user
        console.log(user);
+    }
     })
+
     //skicka data till parent
 
 }

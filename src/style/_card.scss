@@ -20,13 +20,12 @@ img{
     margin-left: 1em;
 
      width: 200px;
-    border: black 1px solid;
+   // border: black 1px solid;
     display: inline-block;
     padding: 0.5em;
     text-align: center;
     border-radius: 5px;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(229,240,229,1) 0%, rgba(0,212,255,1) 100%);   
    
     color: black;
@@ -40,13 +39,13 @@ img{
 }
 
 .book-btn{
-    padding: 6px;
-    width: 4.5em;
+    padding: 6px;   
+    width: 8em;
+    border: none;
     border-radius: 8px;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    background: rgb(2,0,36);
+    //box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(229,240,229,1) 0%, rgba(0,212,255,1) 100%);   
-    color: black;
+    //color: black;
     transition: .7s ease-in-out;
 
 }

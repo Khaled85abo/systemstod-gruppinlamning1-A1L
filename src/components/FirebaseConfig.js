@@ -13,10 +13,15 @@ import "firebase/auth";
 require('dotenv').config()
 
 const firebaseConfig = {
-  apiKey: process.env.REACT_APP_API_KEY,
-    authDomain: process.env.REACT_APP_AUTH_DOMAIN,
-    databaseURL: process.env.REACT_APP_DATABASE_URL,
- 
+ //   apiKey: process.env.APIKEY,
+
+
+
+
+  apiKey: "AIzaSyDiT79vpei4fNcO6rPSxVyyh5JKZxZeKgE",
+    authDomain: "socialapp-66c9c.firebaseapp.com",
+    databaseURL: "https://socialapp-66c9c.firebaseio.com",
+
     projectId: "socialapp-66c9c",
     storageBucket: "socialapp-66c9c.appspot.com",
     messagingSenderId: "1060087522654",

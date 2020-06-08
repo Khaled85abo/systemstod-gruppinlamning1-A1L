@@ -15,8 +15,9 @@ form > input{
     width: 250px;
     padding: 10px;
     margin: 5px;
+    border: none;
     border-radius: 5px;
-        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 
         transition: ease 0.5s;
 }

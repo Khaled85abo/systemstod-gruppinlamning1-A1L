@@ -10,47 +10,49 @@ class Booking extends Component {
 
  
 
-   componentDidMount() {
+     componentDidMount() {
     //get username
 
-    firebase.auth().onAuthStateChanged((user)=>{
+     firebase.auth().onAuthStateChanged((user)=>{
         this.setState({user:user.email}) //user:user
         this.setState({user:user.displayName}) //user:user
         console.log(user);
+
+        if(user){
+
+          const userfromLocal = localStorage.getItem("user");
+          console.log(userfromLocal);
+          var Currentuser = firebase.auth().currentUser;
+          console.log("Current User from firebase");
+          console.log(user);
+console.log("isndide if statment")
+  
+          this.setState({
+           // user: user.displayName,
+            user: Currentuser.email
+          });
+  
+          //get products
+          var docRef = firebase.firestore().collection("Booking").doc(user.uid.toString())
+            .collection("products");
+  
+          docRef.get().then(snapshot => {
+            const products = []
+            snapshot.forEach(doc => {
+              const data = doc.data()
+              products.push(data)
+            })
+            this.setState({ products: products })
+          })
+  
+  
+    } else {
+        console.log("No user")
+    }
+
      })
 
-    if(user){
-
-    const userfromLocal = localStorage.getItem("user");
-    console.log(userfromLocal);
-    var user = firebase.auth().currentUser;
-    console.log("Current User from firebase");
-    console.log(user);
-     console.log(user.displayName);
-    console.log(user.email)
-
-    this.setState({
-     // username: user.displayName,
-      email: user.email
-    });
-
-    //get products
-    var docRef = firebase.firestore().collection("Booking").doc(user.uid.toString())
-      .collection("products");
-
-    docRef.get().then(snapshot => {
-      const products = []
-      snapshot.forEach(doc => {
-        const data = doc.data()
-        products.push(data)
-      })
-      this.setState({ products: products })
-    })
-
-
-}else {
-console.log("No user")
-}
+   
 
 
   }
@@ -58,11 +60,11 @@ console.log("No user")
   render() {
     const loggedIn = this.state.user || localStorage.getItem("user");
     return (
-      <div className={"cards-dev"}> 
+      <div > 
 
 {this.state.user? 
 
-          <div>
+          <div className={"cards-dev"}>
            {
         this.state.products &&
         this.state.products.map(product => {
@@ -82,7 +84,7 @@ console.log("No user")
         })
       } </div>
 
-      : <h1>You should login first </h1>}
+      : <h1 className={"cards-dev"}>You should login first </h1>}
 
     </div>
 
