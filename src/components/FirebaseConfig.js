@@ -18,7 +18,7 @@ const firebaseConfig = {
 
 
 
-  apiKey: process.env.APIKEY,
+  apiKey: "AIzaSyDiT79vpei4fNcO6rPSxVyyh5JKZxZeKgE",
     authDomain: "socialapp-66c9c.firebaseapp.com",
     databaseURL: "https://socialapp-66c9c.firebaseio.com",
 
