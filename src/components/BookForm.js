@@ -13,10 +13,6 @@ class Book extends Component{
 async onSubmitToApi(e){
     e.preventDefault();
 
-
- 
-     
-
   const res = await axios.post("http://localhost:1337/Bookings", {
 
        Name: e.target.elements.name.value,

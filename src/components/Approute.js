@@ -2,7 +2,6 @@ import React from "react";
 import { BrowserRouter, Route, Switch} from "react-router-dom";
 import Navbar from "./Navbar";
 import Lessons from "./Lessons";
-import BookForm from "./BookForm";
 import Bookings from "./Bookings";
 import Userbooking from "./Usersbooking";
 import Profile from "./AuthUser/UserProfile";
@@ -25,7 +24,6 @@ const Approute = () =>{
                  <Navbar/>
                  <Switch>
                     <Route path="/Lessons" component= {Lessons} exact ></Route>
-                    <Route path="/BookForm" component= {BookForm} exact ></Route>
                     <Route path="/Bookings" component= {Bookings} exact></Route>
                     <Route path="/Userbooking" component= {Userbooking} exact></Route>
                     <Route path="/AuthUser/UserProfile" component= {Profile} exact></Route>

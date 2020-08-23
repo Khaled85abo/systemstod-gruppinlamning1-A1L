@@ -80,7 +80,7 @@ const password = e.target.elements.password.value;
    
      const email= e.target.elements.email.value;
      const password= e.target.elements.password.value;
-     const displayName = e.target.elements.username.value;
+    //  const displayName = e.target.elements.username.value;
       e.preventDefault();
 
      firebase

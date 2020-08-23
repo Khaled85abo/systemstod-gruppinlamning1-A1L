@@ -9,11 +9,13 @@
     "axios": "^0.19.2",
     "dotenv": "^8.2.0",
     "firebase": "^7.14.5",
+    "modal": "^1.2.0",
     "node-sass": "^4.14.1",
     "pg": "^8.2.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-firebaseui": "^4.1.0",
+    "react-modal": "^3.11.2",
     "react-router": "^5.1.2",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1"

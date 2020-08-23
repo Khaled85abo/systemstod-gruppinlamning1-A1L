@@ -47,7 +47,7 @@ async onSubmitToApi(e){
      data.append('field',"image" )     
  */
 //console.log(data)
-     const  resPic = await axios.post("http://localhost:1337/upload",data) 
+      await axios.post("http://localhost:1337/upload",data) 
 
     };
 
